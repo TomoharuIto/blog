@@ -10,4 +10,4 @@ Hello, hello Jekyll !
 {% for post in site.posts %}
 - [{{post.title}}](/blog{{post.url}})
 {% endfor %}
-![Jekyll](/blog/assets/images/jekyll.png)
+![Jekyll](/blog/common/images/jekyll.png)
