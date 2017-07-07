@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.wf-notosansjapanese {
+  font-family: "Noto Sans Japanese";
+}
+
 h1 {
   color: skyblue;
   text-align: center;
