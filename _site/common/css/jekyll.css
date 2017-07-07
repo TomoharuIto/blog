@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.wf-notosansjapanese {
+h1, h2, p {
   font-family: "Noto Sans Japanese";
 }
 
