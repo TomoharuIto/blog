@@ -76,16 +76,16 @@ h1 {
   align-content: space-around;
 }
 
-#Contents > ul > li {
+/*#Contents > ul > li {
   display: block;
   position: relative;
-  padding : 30px;
-  border: solid 2px #737373;
-  border-radius: 3px;
-}
+}*/
 
 
 #Contents > ul > li > a {
   display: block;
   padding: 30px;
+  border: solid 2px #737373;
+  border-radius: 3px;
+
 }
