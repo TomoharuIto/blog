@@ -46,6 +46,7 @@ body * {
 
 * img {
   vertical-align: bottom;
+  max-width: 100%;
 }
 
 ::-moz-selection {
@@ -90,6 +91,12 @@ h1 {
 }*/
 
 #Contents > ul > li > p > a {
+  font-size: 18px;
+  color: aqua;
   display: block;
   padding: 50px;
+}
+
+#Contents > ul > li a:hover {
+  opacity: 0.5;
 }
