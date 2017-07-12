@@ -11,7 +11,7 @@ Hello, hello Jekyll !
 
 
 {% for post in site.posts %}
-- [{{ post.date | date_to_long_string }}・{{ post.title }}](/blog{{ post.url }})
+- <a>[{{ post.date | date_to_long_string }}<br>{{ post.title }}](/blog{{ post.url }})</a>
   {{ post.excerpt }}  
 
 
