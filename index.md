@@ -11,10 +11,10 @@ Hello, hello Jekyll !
 
 
 {% for post in site.posts %}
-- <a>[{{ post.date | date_to_long_string }}<br>{{ post.title }}](/blog{{ post.url }})</a>
-  {{ post.excerpt }}  
-
-
-{% endfor %}  
+<a>
+- [{{ post.date | date_to_long_string }}<br>{{ post.title }}](/blog{{ post.url }})
+  {{ post.excerpt }}
+</a>
+{% endfor %}
 
 ![Jekyll](/blog/common/images/jekyll.png)
