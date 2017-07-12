@@ -59,8 +59,18 @@ body * {
   color: #CCCCCC;
   text-shadow: 2px 2px 2px #737373;
 }
+/* == Decoration in <body> tag == <body>内の装飾 == */
 
 h1 {
   color: skyblue;
   text-align: center;
+}
+
+#Contents > ul > li {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#Contents > ul > li > a {
+  background-color: #737373;
 }
