@@ -81,11 +81,11 @@ h1 {
   position: relative;
   padding : 30px;
   border: solid 2px #737373;
-  box-sizing: border-box;
+  border-radius: 3px;
 }
-/*
+
+
 #Contents > ul > li > a {
-  padding: 20px;
-  border: solid 1px #737373;
-  box-sizing: border-box;
-}*/
+  display: block;
+  padding: 30px;
+}
