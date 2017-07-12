@@ -67,11 +67,16 @@ h1 {
   text-align: center;
 }
 
-#Contents > ul > li {
-  padding: 20px;
-  box-sizing: border-box;
+#Contents > ul {
+  display: flex;
+  flex-flow: row wrap;
+  flex: initial;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
 }
-
 #Contents > ul > li > a {
-  background-color: #737373;
+  padding: 20px;
+  border: solid 1px #737373;
+  box-sizing: border-box;
 }
