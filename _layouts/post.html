@@ -3,11 +3,12 @@ layout: default
 ---
 <header>
   {% include post_header.html %}
-  <h2>{{page.title}}</h2>
+  <h2>{{ page.title }}</h2>
+  <p>{{ page.tag }}
 </header>
 
 <main>
   <p>Successfully loading pages.</p>
-  {{content}}
+  　{{content}}
   <p>written by {{page.author}}</p>
 </main>
