@@ -70,13 +70,14 @@ h1 {
 #Contents > ul {
   display: flex;
   flex-flow: row wrap;
-  flex: initial;
-  justify-content: space-between;
+  flex: auto;
+  justify-content: flex-start;
   align-items: flex-start;
   align-content: space-between;
 }
 
 #Contents > ul > li {
+  align-self: stretch;
   border: solid 1px blue;
   border-radius: 5px;
 }
