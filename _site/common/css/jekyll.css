@@ -79,9 +79,12 @@ h1 {
 #Contents > ul > li {
   border: solid 1px blue;
   border-radius: 5px;
-  margin: 20px;
 }
 
+#Contents > ul > li > p {
+  padding: 20px;
+  background-color: skyblue;
+}
 
 #Contents > ul > li a {
   display: block;
