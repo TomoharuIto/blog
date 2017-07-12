@@ -84,7 +84,7 @@ h1 {
 }
 
 
-#Contents > ul > li > a {
+#Contents > ul > li a {
   display: block;
   padding: 50px;
 }
