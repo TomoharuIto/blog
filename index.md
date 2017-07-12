@@ -1,7 +1,7 @@
 ---
 # YAMl Front Matter
 layout: default
-title: blog
+title: Blog
 ---
 # Hello,World!
 Hello, hello Jekyll !

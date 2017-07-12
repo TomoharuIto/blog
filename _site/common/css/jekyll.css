@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* == Common setting == 共通設定 == */
 @font-face{
 	font-family: "Noto Sans JP Light";
 	src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot');
@@ -8,9 +9,55 @@
 	url('/common/NotoSansCJKP/NotoSansCJKJP-Light.ttf') format('truetype');
 }
 
-body {
-	font-family: 'Noto Sans JP Light';
+@font-face{
+font-family:"Helvetica Neue Thin";
+src:url("/common/Fonts/1459684/6a90c865-49a8-4f20-99c7-73987067d9c9.eot?#iefix");
+src:url("/common/Fonts/1459684/6a90c865-49a8-4f20-99c7-73987067d9c9.eot?#iefix") format("eot"),
+url("/common/Fonts/1459684/8520ec8f-b7f6-485e-a3b7-811ab3da29b2.woff2") format("woff2"),
+url("/common/Fonts/1459684/cd6c33a1-279f-47db-8fa5-063d809888f8.woff") format("woff"),
+url("/common/Fonts/1459684/b204c5ce-e6ed-4dfd-bfdc-b45b26fcb7c8.ttf") format("truetype"),
+url("/common/Fonts/1459684/272a58f8-f0b6-4601-934c-b64afb2b3a56.svg#272a58f8-f0b6-4601-934c-b64afb2b3a56") format("svg");
+}
+
+body * {
+  color: #737373;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ h1, h2, h3, p, li, a, small {
+	font-family: 'Noto Sans JP Light', 'Helvetica Neue Thin', sans-serif;
 	font-size: 100%;
+  font-weight: bold;
+  vertical-align: bottom;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; /*スマートフォンで画面をタップ時に出る影を無効化*/
+}
+
+* ul {
+  list-style: none;
+}
+
+* img {
+  vertical-align: bottom;
+}
+
+::-moz-selection {
+  background: transparent;
+  color: #CCCCCC;
+  text-shadow: 2px 2px 2px #737373;
+}
+
+::selection {
+  background: transparent;
+  color: #CCCCCC;
+  text-shadow: 2px 2px 2px #737373;
 }
 
 h1 {
