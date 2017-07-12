@@ -86,8 +86,5 @@ h1 {
 
 #Contents > ul > li > a {
   display: block;
-  padding: 30px;
-  border: solid 2px #737373;
-  border-radius: 5px;
-
+  padding: 50px;
 }
