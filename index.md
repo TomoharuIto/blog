@@ -3,12 +3,14 @@
 layout: default
 title: Blog
 ---
-# Hello,World!  
+
 Hello, hello Jekyll !  
+
 こんにちは、こんにちは、jekyll !  
+
 {% for post in site.posts %}
 - [{{ post.date | date_to_long_string }}・{{ post.title }}](/blog{{ post.url }})  
   {{ post.excerpt }}  
-{% endfor %}
+{% endfor %}  
 
 ![Jekyll](/blog/common/images/jekyll.png)
