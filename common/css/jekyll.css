@@ -86,7 +86,7 @@ h1 {
   background-color: skyblue;
 }
 
-#Contents > ul > li a {
+#Contents > ul > li > p > a {
   display: block;
   padding: 50px;
 }
