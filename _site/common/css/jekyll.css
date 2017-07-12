@@ -71,14 +71,12 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   flex: initial;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: space-around;
 }
 
 #Contents > ul > li {
-  display: flex;
-  align-self: auto;
   border: solid 1px blue;
   border-radius: 5px;
 }
