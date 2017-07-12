@@ -75,8 +75,17 @@ h1 {
   align-items: center;
   align-content: space-around;
 }
+
+#Contents > ul > li {
+  display: block;
+  position: relative;
+  padding : 30px;
+  border: solid 2px #737373;
+  box-sizing: border-box;
+}
+/*
 #Contents > ul > li > a {
   padding: 20px;
   border: solid 1px #737373;
   box-sizing: border-box;
-}
+}*/
