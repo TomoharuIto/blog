@@ -76,10 +76,9 @@ h1 {
   align-content: space-around;
 }
 
-/*#Contents > ul > li {
-  display: block;
-  position: relative;
-}*/
+#Contents > ul > li {
+  align-self: auto;
+}
 
 
 #Contents > ul > li > a {
