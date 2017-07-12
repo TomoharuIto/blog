@@ -71,9 +71,9 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   flex: initial;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
 }
 
 #Contents > ul > li {
