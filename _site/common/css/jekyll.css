@@ -80,12 +80,14 @@ h1 {
   align-self: stretch;
   border: solid 1px blue;
   border-radius: 5px;
-}
-
-#Contents > ul > li > p {
   padding: 20px;
+  margin: 20px;
   background-color: skyblue;
 }
+
+/*#Contents > ul > li > p {
+
+}*/
 
 #Contents > ul > li > p > a {
   display: block;
