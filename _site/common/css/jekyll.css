@@ -91,12 +91,14 @@ h1 {
 }*/
 
 #Contents > ul > li > p > a {
-  font-size: 18px;
+  font-size: 23px;
   color: aqua;
   display: block;
   padding: 50px;
 }
 
 #Contents > ul > li a:hover {
+  background-color: teal;
   opacity: 0.5;
+  transition: 3ms ease-out; 
 }
