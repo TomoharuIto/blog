@@ -1,2 +1,5 @@
 name: TREE OF LIFE
 encoding: UTF-8
+timezone: Japan date
+kramdown:
+  input: GFM
