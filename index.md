@@ -11,8 +11,7 @@ Hello, hello Jekyll !
 - [{{ post.date | date_to_long_string }}・{{ post.title }}](/blog{{ post.url }})
 {% endfor %}
 ![Jekyll](/blog/common/images/jekyll.png)  
-{{ site }}  
-{{ page }}
+{{ site }}
 server_port: {{ site.server_port }}  
 markdown: {{ site.markdoen }}  
 permalink: {{ site.permalink }}
