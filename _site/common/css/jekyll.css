@@ -67,7 +67,7 @@ h1 {
   text-align: center;
 }
 
-#Contents > ul {
+#Contents > ul, p {
   display: flex;
   flex-flow: row wrap;
   flex: initial;
