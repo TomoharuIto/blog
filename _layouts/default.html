@@ -16,7 +16,15 @@
       <h1>TREE OF LIFE</h1>
     </header>
     <main id="Contents">
-      {{ content }}
+      <!-- {{ content }} -->
+      {% for post in site.posts %}
+        <ul>
+          <a href="/blog{{ post.url }}">
+            <li>{{ post.date | date_to_long_string }}<br>{{ post.title }}</li>
+            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+          </a>
+        </ul>
+      {% endfor %}
     </main><!-- /#Content -->
     <footer>
   		{% include footer.html %}
