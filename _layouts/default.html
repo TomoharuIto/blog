@@ -20,7 +20,7 @@
       {% for post in site.posts %}
         <ul>
           <a href="/blog{{ post.url }}">
-            <li>{{ post.date | date_to_long_string }}<br>{{ post.title }}</li>
+            <li>{{ post.date | date_to_long_string.reverse }}<br>{{ post.title }}</li>
             {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
           </a>
         </ul>
