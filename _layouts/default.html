@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="robots" content="noindex,nofollow">
-		<title>{{site.name}} {{page.title}}</title>
+		<title>{{ site.name }}</title>
     <link rel="author" href="https://github.com/TomoharuIto">
     <link rel="canonical" href="https://tomoharuito.github.io">
-  		<link rel="stylesheet" href="/blog/common/css/jekyll.css">
-		<link rel="stylesheet" href="/blog/common/css/syntax.css">
+  	<link rel="stylesheet" href="/blog/common/css/jekyll.css">
 	</head>
+
 	<body>
     <header>
       <h1>TREE OF LIFE</h1>
     </header>
     <main id="Contents">
-      <!-- {{ content }} -->
-      {% for post in site.posts %}
-        <ul>
-          <a href="/blog{{ post.url }}">
-            <li>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</li>
-            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-          </a>
-        </ul>
-      {% endfor %}
+      <article>
+        <nav>
+          {% for post in site.posts %}
+            <ul>
+              <a href="/blog{{ post.url }}">
+                <li>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</li>
+                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+              </a>
+            </ul>
+          {% endfor %}
+        </nav>
+      </article>
     </main><!-- /#Content -->
     <footer>
-  		{% include footer.html %}
+      <aside>
+  		  {% include footer.html %}
+      </aside>
     </footer>
 	</body>
 </html>

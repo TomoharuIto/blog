@@ -1,5 +1,5 @@
 ---
-# YAMl Front Matter
+# YAML Front Matter
 layout: default
 title: Blog
 ---

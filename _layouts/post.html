@@ -1,13 +1,37 @@
 ---
-layout: default
+<!-- YAML Front Matter -->
 ---
-<header>
-  {% include post_header.html %}
-  <h2>{{ page.title }}</h2>
-  <!-- <p>{{ page.tag }}</p> -->
-</header>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="robots" content="noindex,mofollow">
+    <title>{{ page.title }}</title>
+    <link rel="author" harf="https://github.com/TomoharuIto">
+    <link rel="canonical" href="https://tomoharuito.github.io">
+    <link rel="stylesheet" href="/blog/common/css/jekyll.css">
+    <link rel="stylesheet" href="/blog/common/css/syntax.css">
+  </head>
 
-<main>
-  {{ content }}
-  <p>written by {{page.author}}</p>
-</main>
+  <body>
+    <header>
+      {% include post_header.html %}
+      <h2>{{ page.title }}</h2>
+    </header>
+    <main>
+      <article>
+        <section>
+          {{ content }}
+        </section>
+        <section>
+          <p>written by {{page.author}}</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+     {% include footer.html %}
+   </footer>
+  </body>
+</html>
