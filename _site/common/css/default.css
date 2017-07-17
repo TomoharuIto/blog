@@ -84,8 +84,10 @@ h1 {
   border: solid 1px blue;
   border-radius: 5px;
   margin: 20px;
-  background-color: #9DBED5;
-  font-size: 14vmin;
+  background-color: #C9C9C9;
+  font-size: 14px;
+  line-height: 1.429;
+  text-align: center;
 }
 
 .Posts > ul > a:hover {
@@ -96,6 +98,7 @@ h1 {
 
 .Entry > h3 {
   font-size: 28px;
+  line-height: 1.214;
+  text-align: center;
   color: #C9C9C9;
-  background-color: #FFF1E5;
 }
