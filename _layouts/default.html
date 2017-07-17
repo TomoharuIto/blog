@@ -20,11 +20,11 @@
         <section>
           {{ content }}
         </section>
-        <nav>
+        <nav class="Posts">
           {% for post in site.posts %}
             <ul>
               <a href="/blog{{ post.url }}">
-                <li>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</li>
+                <li class="Entry">{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</li>
                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
               </a>
             </ul>

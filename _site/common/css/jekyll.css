@@ -77,7 +77,7 @@ h1 {
   align-content: space-between;
 }
 
-#Contents > ul > a {
+.Posts > ul > a {
   display: block;
   padding: 50px;
   align-self: stretch;
@@ -87,13 +87,13 @@ h1 {
   background-color: skyblue;
 }
 
-#Contents > ul > a > li {
-  font-size: 23px;
-  color: aqua;
-}
-
-#Contents > ul > a:hover {
+.Posts > ul > a:hover {
   background-color: teal;
   opacity: 0.5;
-  transition: 3ms ease-out;
+  transition: 5ms ease-out;
+}
+
+.Entry {
+  font-size: 23px;
+  color: aqua;
 }
