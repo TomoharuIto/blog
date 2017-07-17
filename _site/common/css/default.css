@@ -26,7 +26,7 @@ body * {
   box-sizing: border-box;
 }
 
- h1, h2, h3, p, li, a, small {
+ h1, h3, p, li, a, small {
   font-family: 'Noto Sans JP Light', 'Helvetica Neue Thin', sans-serif;
   font-size: 100%;
   font-weight: bold;
@@ -84,16 +84,18 @@ h1 {
   border: solid 1px blue;
   border-radius: 5px;
   margin: 20px;
-  background-color: skyblue;
+  background-color: #9DBED5;
+  font-size: 14vmin;
 }
 
 .Posts > ul > a:hover {
-  background-color: teal;
-  opacity: 0.5;
-  transition: 5ms ease-out;
+  color: #737373;
+  box-shadow: 0 6px 0 0 #9B9B9B;
+  transition: box-shadow 0.3s ease-out;
 }
 
-.Entry {
-  font-size: 23px;
-  color: aqua;
+.Entry > h3 {
+  font-size: 28px;
+  color: #C9C9C9;
+  background-color: #FFF1E5;
 }

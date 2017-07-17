@@ -8,7 +8,7 @@
 		<title>{{ site.name }}</title>
     <link rel="author" href="https://github.com/TomoharuIto">
     <link rel="canonical" href="https://tomoharuito.github.io">
-  	<link rel="stylesheet" href="/blog/common/css/jekyll.css">
+  	<link rel="stylesheet" href="/blog/common/css/default.css">
 	</head>
 
 	<body>
@@ -24,7 +24,9 @@
           {% for post in site.posts %}
             <ul>
               <a href="/blog{{ post.url }}">
-                <li class="Entry">{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</li>
+                <li class="Entry">
+                  <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
+                </li>
                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
               </a>
             </ul>
