@@ -14,7 +14,7 @@
 	<body>
     <header>
       <h1>TREE OF LIFE</h1>
-      <nav>
+      <!-- <nav>
         {% for post in site.posts %}
           {% if post.tags contains page.tag %}
             <li>
@@ -23,7 +23,10 @@
             </li>
           {% endif %}
         {% endfor %}
-      </nav>
+      </nav> -->
+      {% for tag in site.tags %}
+        {{ tag | first }}
+      {% endfor %}
     </header>
     <main id="Contents">
       <article>
