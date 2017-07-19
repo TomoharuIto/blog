@@ -24,9 +24,11 @@
           {% endif %}
         {% endfor %}
       </nav> -->
-      {% for tag in site.tags %}
-        {{ tag | first }}
-      {% endfor %}
+      <nav>
+        {% for tag in site.tags %}
+          {{ tag | first }}
+        {% endfor %}
+      </nav>
     </header>
     <main id="Contents">
       <article>
