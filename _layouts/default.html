@@ -14,7 +14,7 @@
 	<body>
     <header>
       <h1>TREE OF LIFE</h1>
-      {% for tag in site.tags %}
+      <!-- {% for tag in site.tags %}
       <article>
         <h2 id="tag_{{ tag[0] }}">{{ tag[0] }}</h2>
         <ul>
@@ -23,7 +23,35 @@
           {% endfor %}
         </ul>
       </article>
-      {% endfor %}
+      {% endfor %} -->
+      {% comment %}
+
+      {% endcomment %}
+
+      {% if post %}
+        {% assign date = post.date %}
+        {% assign tags = post.tags %}
+      {% endif %}
+
+      <section>
+        <time
+          datetime="{{ date | date_to_xmlschema }}"
+          class="P_date">
+          {{ date | date: "%Y.%m.%d" }}
+        </time>
+
+      {% comment %}
+
+      {% endcomment %}
+      <nav class="P_tags">
+        {% for tag in tags %}
+          <a href="{{ site.baseurl }}/tags#{{ tag | slugize }}">
+            {{ tag }}
+          </a>
+        {% endfor %}
+      </nav>
+    </section>
+
     </header>
     <main id="Contents">
       <article>
