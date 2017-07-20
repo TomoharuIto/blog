@@ -24,13 +24,12 @@
         </ul>
       </article>
       {% endfor %} -->
-      {% comment %}
-
-      {% endcomment %}
-
       {% if post %}
         {% assign date = post.date %}
         {% assign tags = post.tags %}
+      {% else %}
+        {% assign date = page.date %}
+        {% assign tags = page.tags %}
       {% endif %}
 
       <section>
@@ -39,18 +38,14 @@
           class="P_date">
           {{ date | date: "%Y.%m.%d" }}
         </time>
-
-      {% comment %}
-
-      {% endcomment %}
-      <nav class="P_tags">
-        {% for tag in tags %}
-          <a href="{{ site.baseurl }}/tags#{{ tag | slugize }}">
-            {{ tag }}
-          </a>
-        {% endfor %}
-      </nav>
-    </section>
+        <nav class="P_tags">
+          {% for tag in tags %}
+            <a href="{{ site.baseurl }}/tags#{{ tag | slugize }}">
+              {{ tag }}
+            </a>
+          {% endfor %}
+        </nav>
+      </section>
 
     </header>
     <main id="Contents">
