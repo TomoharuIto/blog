@@ -76,7 +76,7 @@
         <time
           datetime="{{ date | date_to_xmlschema }}"
           class="P_date">
-          {{ post.date | date: "%Y.%m.%d" }}
+          {{ date | date_to_string }}
         </time>
         <nav class="P_tags">
           {% for tag in tags %}
