@@ -54,23 +54,29 @@
     </header><!-- /#pageHead -->
 
     <main id="Contents">
-      <nav>
-        {% for tag in site.tags %}
-          <article>
-            <h2 id="tag_{{ tag[0] }}">{{ tag[0] }}</h2>
-            <ul>
-              {% for post in tag[1] %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </article>
-        {% endfor %}
-      </nav>
+      <!-- {% for tag in site.tags %}
+      <article>
+        <h2 id="tag_{{ tag[0] }}">{{ tag[0] }}</h2>
+        <ul>
+          {% for post in tag[1] %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endfor %} -->
+      {% if post %}
+        {% assign date = post.date %}
+        {% assign tags = post.tags %}
+      {% else %}
+        {% assign date = page.date %}
+        {% assign tags = page.tags %}
+      {% endif %}
+
       <section>
         <time
           datetime="{{ date | date_to_xmlschema }}"
           class="P_date">
-          {{ date | date: "%Y.%m.%d" }}
+          {{ post.date | date: "%Y.%m.%d" }}
         </time>
         <nav class="P_tags">
           {% for tag in tags %}
