@@ -9,29 +9,63 @@
     <link rel="author" href="https://github.com/TomoharuIto">
     <link rel="canonical" href="https://tomoharuito.github.io">
     <link rel="stylesheet" href="/blog/common/css/default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- <= jQuery http://jquery.com/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script> <!-- <= cookie.js  https://github.com/js-cookie/js-cookie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script> <!-- <= Raphaël-JavaScript Library  http://dmitrybaranovskiy.github.io/raphael/ -->
   </head>
 
   <body>
-    <header>
-      <h1>TREE OF LIFE</h1>
-      <!-- {% for tag in site.tags %}
-      <article>
-        <h2 id="tag_{{ tag[0] }}">{{ tag[0] }}</h2>
-        <ul>
-          {% for post in tag[1] %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </article>
-      {% endfor %} -->
-      {% if post %}
-        {% assign date = post.date %}
-        {% assign tags = post.tags %}
-      {% else %}
-        {% assign date = page.date %}
-        {% assign tags = page.tags %}
-      {% endif %}
+  <body id="pageBody">
 
+    <header id="pageHead">
+      <h1 id="LogoPlate"><!-- ==========▼Site Title▼========== -->
+        <a href="index.html" class="Fade">TREE OF LIFE</a>
+      </h1><!-- ==========▲Site Title▲========== -->
+      <div class="Translate"><!-- ==========▼Translation Button▼========== -->
+        <div id="Switch"></div>
+      </div><!-- ==========▲Translation Button▲========== -->
+      <nav id="wrapper-globalNav" class="fixedMenu"><!-- ==========▼GLOBALNAVI▼========== -->
+        <div class="menuBtn">
+          <a href="#">
+            <div id="Horizontal"></div>
+          </a>
+        </div><!-- /.menuBtn -->
+        <ul class="globalNav">
+          <li  id="current" class="dropdownMenu"><a href="index.html" class="Fade">HOME</a>
+            <ul class="list">
+              <li><a href="#ABOUT" class="scrollLink">ABOUT</a></li>
+              <li><a href="#INFORMATION" class="scrollLink">INFORMATION</a></li>
+            </ul>
+          </li>
+          <li class="dropdownMenu"><a href="gallery/index.html" class="Fade">GALLERY</a>
+            <ul class="list">
+              <li><a href="gallery/index.html#PORTFOLIO" class="Fade">PORTFOLIO</a></li>
+              <li><a href="gallery/index.html#STUDY" class="Fade">STUDY</a></li>
+            </ul>
+          </li>
+          <li class="dropdownMenu">
+            <a href="https://tomoharuito.github.io/blog" target="_blank" class="Fade">BLOG</a>
+          </li>
+          <li class="dropdownMenu">
+            <a href="contact/index.html" class="Fade">CONTACT</a>
+          </li>
+        </ul><!-- /.globalNav -->
+      </nav><!-- /#wrapper-globalNav --><!-- ==========▲GLOBALNAVI▲========== -->
+    </header><!-- /#pageHead -->
+
+    <main id="Contents">
+      <nav>
+        {% for tag in site.tags %}
+          <article>
+            <h2 id="tag_{{ tag[0] }}">{{ tag[0] }}</h2>
+            <ul>
+              {% for post in tag[1] %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </article>
+        {% endfor %}
+      </nav>
       <section>
         <time
           datetime="{{ date | date_to_xmlschema }}"
@@ -46,9 +80,6 @@
           {% endfor %}
         </nav>
       </section>
-
-    </header>
-    <main id="Contents">
       <article>
         <section>
           {{ content }}
