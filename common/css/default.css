@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* == Common setting == 共通設定 == */
-@font-face{
+font-face{
   font-family: "Noto Sans JP Light";
   src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot');
   src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot?#iefix') format('embedded-opentype'),
@@ -61,7 +61,9 @@ body * {
   text-shadow: 2px 2px 2px #737373;
 }
 
-/* == Decoration in <body> tag == <body>内の装飾 == */
+/*===================================*/
+/*ページ全体のデザイン*/
+/*===================================*/
 
 h1 {
   color: skyblue;
