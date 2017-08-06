@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7e43219c-f634-4c01-aa25-606efc088c5a&fontids=1459684"); */
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7e43219c-f634-4c01-aa25-606efc088c5a&fontids=1459684");
 
 @font-face{
 	font-family: "Noto Sans JP Light";
@@ -17,10 +17,12 @@ url("/common/Fonts/1459684/8520ec8f-b7f6-485e-a3b7-811ab3da29b2.woff2") format("
 url("/common/Fonts/1459684/cd6c33a1-279f-47db-8fa5-063d809888f8.woff") format("woff"),
 url("/common/Fonts/1459684/b204c5ce-e6ed-4dfd-bfdc-b45b26fcb7c8.ttf") format("truetype"),
 url("/common/Fonts/1459684/272a58f8-f0b6-4601-934c-b64afb2b3a56.svg#272a58f8-f0b6-4601-934c-b64afb2b3a56") format("svg");
+}
 
 /* ================================================== */
 /*== Whole page == ページ全体 ==*/
 /* ================================================== */
+
 body * {
   color: #FFFFFF;
   margin: 0;
