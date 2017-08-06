@@ -24,16 +24,16 @@
       <h2>{{ page.title }}</h2>
     </header>
 
-    <main>
+    <main id="Contents">
       <article>
-        <section>
+        <section class="Posts">
           {{ content }}
         </section>
         <section>
           <p>written by {{page.author}}</p>
         </section>
       </article>
-    </main>
+    </main><!-- /#Contents -->
 
     <footer id="pageFood">
      {% include footer.html %}

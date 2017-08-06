@@ -30,10 +30,6 @@ body * {
   box-sizing: border-box;
 }
 
-#pageBody {
-  position: relative;
-}
-
 * h1, * h2, * h3, * p, * li, * a, * time, * small, * text {
 	font-family: "Helvetica Neue Thin", 'Noto Sans JP Light', sans-serif;
 	font-size: 100%;
@@ -66,6 +62,24 @@ body * {
 	background: transparent;
 	color: #CCCCCC;
 	text-shadow: 2px 2px 2px #737373;
+}
+
+
+#pageBody {
+  position: relative;
+  text-align: center;
+}
+
+/* ================================================== */
+/*== Articles == 記事 ==*/
+/* ================================================== */
+
+#Contents {
+  padding: 0 5px;
+}
+
+.Posts {
+
 }
 /* ================================================== */
 /*== Page footer == ページフッター ==*/
