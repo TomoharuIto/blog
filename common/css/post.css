@@ -28,6 +28,11 @@ body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: initial;
+  justify-content: center;
+  align-items: center;
 }
 
 * h1, * h2, * h3, * p, * li, * a, * time, * small, * text {
@@ -67,19 +72,26 @@ body * {
 
 #pageBody {
   position: relative;
-  text-align: center;
 }
 
 /* ================================================== */
 /*== Articles == 記事 ==*/
 /* ================================================== */
 
+h2 {
+  font-size: 30px;
+}
+
+header > time {
+  font-size: 20px;
+}
+
 #Contents {
   padding: 0 5px;
 }
 
 .Posts {
-
+  font-size: 20px;
 }
 /* ================================================== */
 /*== Page footer == ページフッター ==*/
