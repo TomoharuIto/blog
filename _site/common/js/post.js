@@ -1,5 +1,5 @@
 // ========================================
-// Default.js
+// Post.js
 // ========================================
 
 // ========================================
@@ -54,4 +54,58 @@ $(function(){
   });
 
 });
+
+//=== Copy guard === コピーガード ===
+
+$(function(){
+
+  var $body = $('body');
+  var $target = $body.find('img').not('.InModal'); // <= .InModal が付いていない<img>要素を取得
+/*
+  var $wrapper = $('<div></div>');
+  $wrapper.addClass('WrapperImg');
+  $target.wrap($wrapper); // <= まず全ての<img>要素を<div>で囲む
+  var $BlueWall = $('<div></div>');
+  $BlueWall.addClass('BlueWall');
+  $('.WrapperImg').prepend($BlueWall); // <= ＄BlueWallを<img>要素を囲んだ親<div>要素の先頭に挿入
+*/
+  $target
+/*
+  .each(function(){
+    var $Previous = $(this).prev('.BlueWall'); // <= ＄Previous は各々の<img>要素の前の<div>要素です
+    $Previous
+    .css({
+      height:'size_h',
+      width:'size_w'
+    });
+  })
+
+  .on('contextmenu', function(){ // <= <img>要素上のみ右クリックメニューが出ない
+    return false;
+  });
+*/
+  $body
+  .keydown(function(event){ // <= ctrl + C || ctrl + A key を無効化
+    if((event.ctrlKey === true && event.which === 67) ||
+      (event.ctrlKey === true && event.which === 65)){
+      return false;
+    }
+  })
+  .bind('copy', function(){ // <= コピーを無効化
+    return false;
+  });
+
+});
+
+//=== Update Copyright === コピーライトの更新 ===
+
+window.onload = function(){
+
+  var now = new Date();
+  var year = now.getFullYear();
+  console.log(year);
+  document.getElementById('year').textContent = year;
+
+};
+
 // ©2017 Tomoharu Ito FYI: https://github.com/TomoharuIto/tomoharuito.github.io
