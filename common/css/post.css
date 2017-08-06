@@ -28,11 +28,6 @@ body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: flex;
-  flex-flow: column nowrap;
-  flex: initial;
-  justify-content: center;
-  align-items: center;
 }
 
 * h1, * h2, * h3, * p, * li, * a, * time, * small, * text {
@@ -80,18 +75,27 @@ body * {
 
 h2 {
   font-size: 30px;
+  line-height: 1.2;
 }
 
 header > time {
   font-size: 20px;
+  line-height: 1.3;
 }
 
 #Contents {
   padding: 0 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: initial;
+  justify-content: center;
+  align-items: center;
 }
 
-.Posts {
-  font-size: 20px;
+.Posts > p {
+  font-size: 22px;
+  line-height: 1.27;
+  text-align: left:
 }
 /* ================================================== */
 /*== Page footer == ページフッター ==*/
