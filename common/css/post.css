@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7e43219c-f634-4c01-aa25-606efc088c5a&fontids=1459684");
+/* @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7e43219c-f634-4c01-aa25-606efc088c5a&fontids=1459684"); */
 
 @font-face{
 	font-family: "Noto Sans JP Light";
 src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot');
 	src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot?#iefix') format('embedded-opentype'),
 	url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.woff') format('woff'),
-	url('../NotoSansCJKP/NotoSansCJKJP-Light.ttf') format('truetype');
+	url('/common/Fonts/NotoSansCJKP/NotoSansCJKJP-Light.ttf') format('truetype');
 }
 
 @font-face{
