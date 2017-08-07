@@ -56,32 +56,34 @@
     </header><!-- /#pageHead -->
 
     <main id="Contents">
-      <nav>
-        {% for tag in site.tags %}
-          <article>
-            <h3 id="tag_{{ tag[0] }}">{{ tag[0] }}</h3>
-            <ul>
-              {% for post in tag[1] %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </article>
-        {% endfor %}
-      </nav>
       <article>
         <section>
           {{ content }}
         </section>
+        <nav id=Tags>
+          {% for tag in site.tags %}
+            <section>
+              <h3 id="tag_{{ tag[0] }}">{{ tag[0] }}</h3>
+              <ul>
+                {% for post in tag[1] %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endfor %}
+        </nav>
         <nav class="Posts">
           {% for post in site.posts %}
-            <ul>
-              <a href="/blog{{ post.url }}">
-                <li class="Entry">
-                  <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
-                </li>
-                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-              </a>
-            </ul>
+            <section>
+              <ul>
+                <a href="/blog{{ post.url }}">
+                  <li class="Entry">
+                    <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
+                  </li>
+                  {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                </a>
+              </ul>
+            </section>
           {% endfor %}
         </nav>
       </article>

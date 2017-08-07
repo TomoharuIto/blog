@@ -4,7 +4,15 @@
 /*Tagのデザイン*/
 /*==================================*/
 
-h3 {
+#Tags {
+  display: flex;
+  flex-flow: row wrap;
+  flex: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Tags h3 {
   font-size:14px;
   line-height: 1.429;
 }
@@ -14,7 +22,7 @@ h3 {
 
 #Contents > ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   flex: auto;
   justify-content: flex-start;
   align-items: flex-start;
