@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-#Tags > h3 {
+#Tags h3 {
   font-size:14px;
   line-height: 1.429;
 }
@@ -20,7 +20,7 @@
 /*Blog投稿記事のデザイン*/
 /*==================================*/
 
-#Contents > ul {
+#Post ul {
   display: flex;
   flex-flow: column wrap;
   flex: auto;
@@ -29,7 +29,7 @@
   align-content: space-between;
 }
 
-.Posts > ul > a {
+.Posts ul a {
   display: block;
   padding: 50px;
   align-self: stretch;
@@ -42,7 +42,7 @@
   text-align: center;
 }
 
-.Posts > ul > a:hover {
+.Posts ul a:hover {
   color: #FFFFFF;
   box-shadow: 0 6px 0 0 #C9C9C9;
   transition: box-shadow 0.3s ease-out;
