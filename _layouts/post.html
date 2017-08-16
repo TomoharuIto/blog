@@ -18,11 +18,12 @@
     <script src="/blog/common/js/post.js"></script>
   </head>
 
-  <body id="pageBody">
-    <header>
+  <body id="Reading_matter">
+
+    <header id="Headline">
       {% include post_header.html %}
       <h2 class="Title">{{ page.title }}</h2>
-    </header>
+    </header><!-- /#Headline -->
 
     <main id="Contents">
       <article>
@@ -35,9 +36,10 @@
       </article>
     </main><!-- /#Contents -->
 
-    <footer id="pageFood">
+    <footer id="Appendix">
      {% include footer.html %}
-   </footer>
-  </body><!-- /#pageBody -->
+   </footer><!-- /#Appendix -->
+
+  </body><!-- /#Reading_matter -->
 
 </html>

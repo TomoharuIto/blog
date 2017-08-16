@@ -65,12 +65,12 @@ body * {
 }
 
 
-#pageBody {
+#Reading_matter {
   /* position: relative; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 2% 5% 0;
+  padding-left: 2%;
 }
 
 /* ================================================== */
@@ -88,7 +88,7 @@ header > time {
 }
 
 #Contents {
-  padding: 0 5px;
+  padding: 10px 5%;
   flex: auto;
   /* display: flex;            */
   /* flex-flow: column nowrap; */
@@ -106,7 +106,7 @@ header > time {
 /*== Page footer == ページフッター ==*/
 /* ================================================== */
 
-#pageFood {
+#Appendix {
   padding: 1% 0;
   /* display: block;     */
   /* position: absolute; */
