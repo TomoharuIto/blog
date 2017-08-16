@@ -144,6 +144,18 @@ header > time {
 	display: none;
 }
 
+/* ==================== Smartphone's UI == スマートフォン向けUI ====================> */
+
+@media screen and (max-width:600px) {
+
 /* ================================================== */
-/* == Smartphone UI === スマートフォンUI == */
+/*  Back to the Top == トップへ戻るボタン */
 /* ================================================== */
+
+.topBtn {
+  bottom: 30px;
+  right: 10px;
+  width: 50px;
+}
+
+}
