@@ -88,6 +88,7 @@ header > time {
 
 #Contents {
   padding: 0 5px;
+  flex: 1;
   /* display: flex;            */
   /* flex-flow: column nowrap; */
   /* flex: initial;            */
@@ -107,7 +108,7 @@ header > time {
 #pageFood {
   /* display: block;     */
   /* position: absolute; */
-  align-self: baseline;
+  /* align-self: baseline; */
   height: 3em;
   width: 100%;
   right: 0;
