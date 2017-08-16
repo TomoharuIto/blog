@@ -66,7 +66,7 @@ body * {
 
 
 #pageBody {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -109,9 +109,9 @@ header > time {
   padding: 1% 0;
   /* display: block;     */
   /* position: absolute; */
-  align-self: baseline;
+  /* align-self: baseline; */
   /* height: 3em; */
-  width: 100%;
+  /* width: 100%; */
   /* right: 0; */
   /* bottom: -3.5em; */
 }
