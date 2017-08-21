@@ -7,6 +7,7 @@ src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot');
   src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot?#iefix') format('embedded-opentype'),
   url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.woff') format('woff'),
   url('/common/Fonts/NotoSansCJKP/NotoSansCJKJP-Light.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face{
@@ -17,6 +18,7 @@ url("/common/Fonts/1459684/8520ec8f-b7f6-485e-a3b7-811ab3da29b2.woff2") format("
 url("/common/Fonts/1459684/cd6c33a1-279f-47db-8fa5-063d809888f8.woff") format("woff"),
 url("/common/Fonts/1459684/b204c5ce-e6ed-4dfd-bfdc-b45b26fcb7c8.ttf") format("truetype"),
 url("/common/Fonts/1459684/272a58f8-f0b6-4601-934c-b64afb2b3a56.svg#272a58f8-f0b6-4601-934c-b64afb2b3a56") format("svg");
+font-display: swap;
 }
 
 /* ================================================== */
@@ -25,16 +27,18 @@ url("/common/Fonts/1459684/272a58f8-f0b6-4601-934c-b64afb2b3a56.svg#272a58f8-f0b
 
 body * {
   color: #737373;
+  background-color: #FFF1E5;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 * h1, * h2, * h3, * p, * li, * a, * time, * small, * text {
-  font-family: "Helvetica Neue Thin", 'Noto Sans JP Light', sans-serif;
+  font-family: "Helvetica Neue Thin", 'Noto Sans JP Light', Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 100%;
-  font-weight: bold;
+  font-weight: normal;
   vertical-align: bottom;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -66,7 +70,6 @@ body * {
 
 
 #Reading_matter {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -102,17 +105,12 @@ h4 {
 #Contents {
   padding: 0 10%;
   flex: auto;
-  /* display: flex;            */
-  /* flex-flow: column nowrap; */
-  /* flex: initial;            */
-  /* justify-content: center;  */
-  /* align-items: center;      */
 }
 
 .Posts > p {
   font-size: 22px;
   line-height: 1.27;
-  text-align: left:
+  text-align: left;
 }
 
 aside {
