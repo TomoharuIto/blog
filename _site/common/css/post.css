@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7e43219c-f634-4c01-aa25-606efc088c5a&fontids=1459684");
 
-@font-face{
-  font-family: "Noto Sans JP Light";
-src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot');
-  src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot?#iefix') format('embedded-opentype'),
-  url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.woff') format('woff'),
-  url('/common/Fonts/NotoSansCJKP/NotoSansCJKJP-Light.ttf') format('truetype');
-  font-display: swap;
-}
+/* @font-face{                                                                                           */
+/*   font-family: "Noto Sans JP Light";                                                                  */
+/* src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot');                                      */
+/*   src: url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.eot?#iefix') format('embedded-opentype'), */
+/*   url('/common/Fonts/NotoSansCJKJP/NotoSansCJKJP-Light.woff') format('woff'),                         */
+/*   url('/common/Fonts/NotoSansCJKP/NotoSansCJKJP-Light.ttf') format('truetype');                       */
+/*   font-display: swap;                                                                                 */
+/* }                                                                                                     */
 
 @font-face{
 font-family:"Helvetica Neue Thin";
@@ -25,6 +25,10 @@ font-display: swap;
 /*== Whole page == ページ全体 ==*/
 /* ================================================== */
 
+.wf-notosansjapanese {
+font-family: "Noto Sans Japanese";
+}
+
 body * {
   color: #737373;
   margin: 0;
@@ -32,7 +36,7 @@ body * {
   box-sizing: border-box;
 }
 
-* h1, * h2, * h3, * p, * li, * a, * time, * small, * text {
+* h1, * h2, * h3, * h4, * p, * li, * a, * time, * small, * text {
   font-family: "Helvetica Neue Thin", 'Noto Sans JP Light', Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 100%;
   font-weight: normal;
