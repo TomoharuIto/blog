@@ -37,7 +37,7 @@ body * {
 }
 
 * h1, * h2, * h3, * h4, * p, * li, * a, * time, * small, * text {
-  font-family: "Helvetica Neue Thin", 'Noto Sans JP Light', Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  /* font-family: "Helvetica Neue Thin", 'Noto Sans JP Light', Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; */
   font-size: 100%;
   font-weight: normal;
   vertical-align: bottom;
