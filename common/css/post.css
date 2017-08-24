@@ -25,9 +25,9 @@ font-display: swap;
 /*== Whole page == ページ全体 ==*/
 /* ================================================== */
 
-.wf-notosansjapanese {
-font-family: "Noto Sans Japanese";
-}
+/* .wf-notosansjapanese {             */
+/* font-family: "Noto Sans Japanese"; */
+/* }                                  */
 
 body * {
   color: #737373;
@@ -37,6 +37,7 @@ body * {
 }
 
 * h1, * h2, * h3, * h4, * p, * li, * a, * time, * small, * text {
+  font-family: "Noto Sans Japanese";
   /* font-family: "Helvetica Neue Thin", 'Noto Sans JP Light', Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; */
   font-size: 100%;
   font-weight: normal;
