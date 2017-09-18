@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* ================================================== */
-/*== Post page's design == ポストページのデザイン ==*/
+/* == Post page's design == ポストページのデザイン == */
 /* ================================================== */
 
 body * {
@@ -22,7 +22,7 @@ body * {
 
 * a {
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent; /*スマートフォンで画面をタップ時に出る影を無効化*/
+  -webkit-tap-highlight-color: transparent; /* スマートフォンで画面をタップ時に出る影を無効化 */
 }
 
 * ul {
@@ -54,7 +54,7 @@ body * {
 }
 
 /* ================================================== */
-/*== Articles == 記事 ==*/
+/* == Articles == 記事 == */
 /* ================================================== */
 
 #Headline {
@@ -96,37 +96,51 @@ text-align: end;
 }
 
 /* ================================================== */
-/*== Page footer == ページフッター ==*/
+/* == Page footer == ページフッター == */
 /* ================================================== */
 
-#Appendix {
-  padding: 1% 0;
-  /* display: block;     */
-  /* position: absolute; */
-  /* align-self: baseline; */
-  /* height: 3em; */
-  /* width: 100%; */
-  /* right: 0; */
-  /* bottom: -3.5em; */
+#pageFood {
+  position: absolute;
+  min-width: 100%;
+  padding-bottom: 0.5%;
+  right: 0;
+  bottom: -6.5vw;
+}
+
+.Colophon {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: initial;
+  justify-content: flex-end;
+}
+
+.Host_on {
+  align-self: flex-end;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
+  text-align: right;
+}
+
+.Host_on a {
+  color: #9DBED5;
+}
+
+.Trademark {
+  padding-left: 2vw;
 }
 
 .Sub-Logo {
-  font-size: 25px;
-  text-align: right;
-  color: #9B9B9B;
-  letter-spacing: 2px;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
+  line-height: 0.5;
+  text-align: left;
 }
 
 .copyright {
-  font-size: 15px;
-  text-align: right;
-}
-
-.copyright small {
-  letter-spacing: 2px;
-  word-spacing: -4px;
   white-space: nowrap;
-  color: #9B9B9B;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
+  text-align: left;
 }
 
 /* ================================================== */
@@ -149,7 +163,7 @@ text-align: end;
 @media screen and (max-width:600px) {
 
 /* ================================================== */
-/*== Articles == 記事 ==*/
+/* == Articles == 記事 == */
 /* ================================================== */
 
 #Headline > time {
@@ -182,7 +196,7 @@ h4 {
   text-align: left;
 }
 /* ================================================== */
-/*  Back to the Top == トップへ戻るボタン */
+/* Back to the Top == トップへ戻るボタン */
 /* ================================================== */
 
 .topBtn {

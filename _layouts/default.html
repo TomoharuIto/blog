@@ -62,7 +62,7 @@
         <section>
           {{ content }}
         </section>
-        <nav id=Tags>
+        <nav id="Tags">
           {% for tag in site.tags %}
             <section>
               <h3 id="tag_{{ tag[0] }}">{{ tag[0] }}</h3>
@@ -92,15 +92,18 @@
     </main><!-- /#Content -->
 
     <footer id="pageFood"><!-- ==========▼Footer▼========== -->
-      <nav><!-- ==========▼Back to top▼========== -->
-        <div class="topBtn">
-          <a href="#top" class="scrollLink">
-            <div id="Arrow"></div>
-         </a>
-        </div><!-- /.topBtn -->
-      </nav><!-- ==========▲Back to top▲========== -->
-      <h3 class="Sub-Logo">TREE OF LIFE</h3>
-      <p class="copyright"><small>&copy;<span id="year"></span> Tomoharu Ito</small></p>
+      <nav class="topBtn">
+        <a href="#top" class="scrollLink">
+          <div id="Arrow"></div>
+        </a>
+      </nav><!-- /.topBtn -->
+      <aside class="Colophon">
+        <p class="Host_on"><small>Hosted on<a href="https://pages.github.com" target="_blank"> Github Pages</a></small></p>
+        <div class="Trademark">
+          <p class="Sub-Logo">TREE OF LIFE</p>
+          <p class="copyright"><small>&copy;<span id="year"></span> Tomoharu Ito</small></p>
+        </div>
+      </aside>
     </footer><!-- ==========▲Footer▲========== -->
 
   </body>
