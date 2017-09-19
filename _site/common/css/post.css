@@ -1,13 +1,13 @@
 @charset "UTF-8";
+/* ================================================== */
+/* CSS for the Article page                           */
+/* ================================================== */
 
-/* ================================================== */
-/*== Post page's design == ポストページのデザイン ==*/
-/* ================================================== */
+/* ================================== */
+/* The whole page                     */
+/* ================================== */
 
 body * {
-/* ================================================== */
-/*== Blog page's design == ブログページのデザイン ==*/
-/* ================================================== */
   color: #737373;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ body * {
 
 * a {
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent; /*スマートフォンで画面をタップ時に出る影を無効化*/
+  -webkit-tap-highlight-color: transparent; /* スマートフォンで画面をタップ時に出る影を無効化 */
 }
 
 * ul {
@@ -56,9 +56,9 @@ body * {
   background-color: #FCFCFC;
 }
 
-/* ================================================== */
-/*== Articles == 記事 ==*/
-/* ================================================== */
+/* ================================== */
+/*  Articles                          */
+/* ================================== */
 
 #Headline {
   padding: 2%;
@@ -98,43 +98,58 @@ aside {
 text-align: end;
 }
 
-/* ================================================== */
-/*== Page footer == ページフッター ==*/
-/* ================================================== */
+/* ================================== */
+/*  Page footer                       */
+/* ================================== */
 
-#Appendix {
-  padding: 1% 0;
-  /* display: block;     */
-  /* position: absolute; */
-  /* align-self: baseline; */
-  /* height: 3em; */
-  /* width: 100%; */
-  /* right: 0; */
-  /* bottom: -3.5em; */
+#pageFood {
+  position: absolute;
+  min-width: 100%;
+  padding-bottom: 0.5%;
+  right: 0;
+  bottom: -6.5vw;
+}
+
+.Colophon {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: initial;
+  justify-content: flex-end;
+}
+
+.Host_on {
+  align-self: flex-end;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
+  text-align: right;
+}
+
+.Host_on a {
+  color: #9DBED5;
+}
+
+.Trademark {
+  padding-left: 2vw;
 }
 
 .Sub-Logo {
-  font-size: 25px;
-  text-align: right;
-  color: #9B9B9B;
-  letter-spacing: 2px;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
+  line-height: 0.5;
+  text-align: left;
 }
 
 .copyright {
-  font-size: 15px;
-  text-align: right;
-}
-
-.copyright small {
-  letter-spacing: 2px;
-  word-spacing: -4px;
   white-space: nowrap;
-  color: #9B9B9B;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 80);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 80);
+  text-align: left;
 }
 
-/* ================================================== */
-/* == Back to the Top === トップへ戻るボタン == */
-/* ================================================== */
+/* ================================== */
+/* Back to top Button                 */
+/* ================================== */
+
 .topBtn {
   position: fixed;
   bottom: 2%;
@@ -147,13 +162,15 @@ text-align: end;
   display: none;
 }
 
-/* ==================== Smartphone's UI == スマートフォン向けUI ====================> */
+/* ==================== Responsive Web Design ====================> */
 
-@media screen and (max-width:600px) {
+/* ==================== When the screen size is 736px or less ====================> */
 
-/* ================================================== */
-/*== Articles == 記事 ==*/
-/* ================================================== */
+@media screen and (max-width:736px) {
+
+/* ================================== */
+/*  Articles                          */
+/* ================================== */
 
 #Headline > time {
   font-size: 16px;
@@ -184,9 +201,9 @@ h4 {
   /* line-height: 1.27; */
   text-align: left;
 }
-/* ================================================== */
-/*  Back to the Top == トップへ戻るボタン */
-/* ================================================== */
+/* ================================== */
+/* Back to top Button                 */
+/* ================================== */
 
 .topBtn {
   bottom: 30px;
