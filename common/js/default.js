@@ -1,10 +1,11 @@
 // ========================================
-// Default.js
+// JS for the Blog page
 // ========================================
 
 // ========================================
-// Back to top of page === ページの先頭へ戻る
+// Back to top of page
 // ========================================
+
 $(function(){
 
   $('.scrollLink').on('click', function(event){
@@ -54,4 +55,5 @@ $(function(){
   });
 
 });
+
 // ©2017 Tomoharu Ito FYI: https://github.com/TomoharuIto/tomoharuito.github.io
