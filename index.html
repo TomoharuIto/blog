@@ -95,20 +95,20 @@
               <h3 id="tag_{{ tag[0] }}">{{ tag[0] }}</h3>
               -->
               <ul>
-                <a href="/blog{{ post.url }}">
-                  <li class="Entry">
-                    <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
-                  </li>
-                  {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-                </a>
-              </ul>
-              <!--
-              <ul>
                 {% for post in tag[1] %}
-                <li><a href="/blog{{ post.url }}">{{ post.title }}</a></li>
+                  <!--
+                    <li><a href="/blog{{ post.url }}">{{ post.title }}</a></li>
+                  -->
+                  <ul>
+                    <a href="/blog{{ post.url }}">
+                      <li class="Entry">
+                        <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
+                      </li>
+                      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                    </a>
+                  </ul>
                 {% endfor %}
               </ul>
-              -->
             </section>
           {% endfor %}
           <!--
