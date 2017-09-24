@@ -42,7 +42,7 @@
 /* Articles list                      */
 /* ================================== */
 
-.Post ul {
+.Posts ul {
   display: flex;
   flex-flow: column wrap;
   flex: 0 1 calc(100% / 3);
