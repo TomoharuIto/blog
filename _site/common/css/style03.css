@@ -54,7 +54,7 @@
 .Posts ul a {
   display: block;
   padding: 5%;
-  /* align-self: stretch; */
+  max-width: calc(100% / 3 - 2vw);
   border: solid 1px #FCFCFC;
   border-radius: 5px;
   margin: 2vw;
