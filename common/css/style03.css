@@ -19,8 +19,8 @@
   border-radius: 5px;
 }
 
-#Tags secton:first-child {
-  background-color: #FFF1E5;
+#Tags section:first-child {
+  background-color: #9DBED5;
 }
 
 #Tags section:nth-child(2){
@@ -32,10 +32,10 @@
 }
 
 #Tags h3 {
-  font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
-  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
-  letter-spacing: 0.3vw;
-  line-height: 1.5;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 60);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 60);
+  letter-spacing: 0.1vw;
+  line-height: 1.75;
 }
 
 /* ================================== */
@@ -44,7 +44,7 @@
 
 .Posts ul {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   flex: 0 1 calc(100% / 3);
   justify-content: center;
   align-items: center;
@@ -69,9 +69,9 @@
 }
 
 .Entry > h3 {
-  font-size: calc(0.875em + 0.25 * (100 - 80em) / 60);
-  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 60);
-  letter-spacing: 0.1vw;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
+  letter-spacing: 0.3vw;
   line-height: 1.75;
   text-align: center;
 }
