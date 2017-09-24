@@ -4,26 +4,6 @@
 /* ================================================== */
 
 /* ================================== */
-/* The whole page                     */
-/* ================================== */
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-body > article {
-  flex: 1;
-}
-
-#Contents {
-  padding-bottom: 5vw;
-}
-
-/* ================================== */
 /* Tag                                */
 /* ================================== */
 
@@ -64,22 +44,19 @@ body > article {
 
 .Posts {
   display: flex;
-  flex-flow: row nowrap;
-  flex: 0 1 calc(100% / 3);
+  flex-flow: column nowrap;
+  flex: initial;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
 
-.Rosts ul {
-  max-width: calc(100% / 3 - 2%);
-}
 .Posts ul a {
   display: block;
-  padding: 5%;
+  padding: 3vh 5vw;
   border: solid 1px #FCFCFC;
   border-radius: 5px;
-  margin: 2%;
+  margin: 5vmin;
   background-color: #FCFCFC;
   text-align: center;
 }
@@ -127,14 +104,6 @@ body > article {
 /* ==================== When the screen size is 736px or less ====================> */
 
 @media screen and (max-width:736px) {
-
-/* ================================== */
-/* The whole page                     */
-/* ================================== */
-
-#Contents {
-  padding-bottom: 8vmin;
-}
 
 /* ================================== */
 /* Back to top Button                 */
