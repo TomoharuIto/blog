@@ -88,18 +88,18 @@
         </nav>
         <nav class="Posts">
           {% for post in site.posts %}
+            {% for tag in site.tags %}
             <section>
               <ul>
                 <a href="/blog{{ post.url }}">
                   <li class="Entry">
-                    {% for tag in site.tags %}
                       <h3 id="tag_{{ tag[0] }}">{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
-                    {% endfor %}
                   </li>
                   {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
                 </a>
               </ul>
             </section>
+            {% endfor %}
           {% endfor %}
         </nav>
       </article>
