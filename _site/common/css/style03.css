@@ -45,7 +45,7 @@
 .Posts {
   display: flex;
   flex-flow: column nowrap;
-  flex: initial;
+  flex: 0 1 50%;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -53,10 +53,10 @@
 
 .Posts ul a {
   display: block;
-  padding: 3vh 5vw;
+  padding: 2vh 3vw;
   border: solid 1px #FCFCFC;
   border-radius: 5px;
-  margin: 5vmin;
+  margin: 5vh 3vw;
   background-color: #FCFCFC;
   text-align: center;
 }
