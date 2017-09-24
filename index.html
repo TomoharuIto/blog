@@ -91,8 +91,8 @@
             <section>
               <ul>
                 <a href="/blog{{ post.url }}">
-                  <li class="Entry">
-                      <h3 id="{{ page.tags }}">{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
+                  <li id="{{ page.tags }}" class="Entry">
+                      <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
                   </li>
                   {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
                 </a>
