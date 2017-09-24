@@ -25,14 +25,14 @@
     <script src="/blog/common/js/post.js"></script>
   </head>
 
-  <body id="Reading_matter">
+  <body id="Reading_matter {{ page.tags }}">
 
     <header id="Headline">
       {% include post_header.html %}
       <h2 class="Title">{{ page.title }}</h2>
     </header><!-- /#Headline -->
 
-    <main class="{{ page.tags }}" id="Contents">
+    <main id="Contents">
       <article>
         <section class="Posts">
           {{ content }}
