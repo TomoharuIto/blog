@@ -73,18 +73,11 @@
           </p>
         </section>
         <nav id="Tags">
-          <section>
             {% for tag in site.tags %}
-                <h3 id="tag_{{ tag[0] }}">{{ tag[0] }}</h3>
-                <!--
-                <ul>
-                  {% for post in tag[1] %}
-                  <li><a href="/blog{{ post.url }}">{{ post.title }}</a></li>
-                  {% endfor %}
-                </ul>
-                -->
+              <section>
+                <h4 id="tag_{{ tag[0] }}">{{ tag[0] }}</h4>
+              </section>
             {% endfor %}
-          </section>
         </nav>
         <nav class="Posts">
           {% for post in site.posts %}
