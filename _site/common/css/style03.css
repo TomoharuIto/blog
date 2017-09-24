@@ -44,11 +44,11 @@
 
 .Posts {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   flex: 0 1 50%;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  /* align-items: center; */
+  /* align-content: center; */
 }
 
 .Posts ul a {
