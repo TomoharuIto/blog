@@ -92,7 +92,9 @@
               <ul>
                 <a href="/blog{{ post.url }}">
                   <li class="Entry">
-                    <h3 id="tag_{{ tag[0] }}">{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
+                    {% for tag in site.tags %}
+                      <h3 id="tag_{{ tag[0] }}">{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
+                    {% endfor %}
                   </li>
                   {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
                 </a>
