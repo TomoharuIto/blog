@@ -90,7 +90,7 @@
           {% for post in site.posts %}
             <section>
               <ul>
-                <a id="{{ tag[0] }}" href="/blog{{ post.url }}">
+                <a id="{{ page.tags }}" href="/blog{{ post.url }}">
                   <li class="Entry">
                       <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
                   </li>
