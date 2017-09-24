@@ -92,7 +92,7 @@
               <ul>
                 <a href="/blog{{ post.url }}">
                   <li class="Entry">
-                      <h3 id="{{ site.tags }}">{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
+                      <h3 id="{{ post.tags }}">{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
                   </li>
                   {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
                 </a>
