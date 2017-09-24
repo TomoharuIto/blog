@@ -19,6 +19,10 @@ body > article {
   flex: 1;
 }
 
+#Contents {
+  padding-bottom: 5vw;
+}
+
 /* ================================== */
 /* Tag                                */
 /* ================================== */
@@ -123,6 +127,14 @@ body > article {
 /* ==================== When the screen size is 736px or less ====================> */
 
 @media screen and (max-width:736px) {
+
+/* ================================== */
+/* The whole page                     */
+/* ================================== */
+
+#Contents {
+  padding-bottom: 8vmin;
+}
 
 /* ================================== */
 /* Back to top Button                 */
