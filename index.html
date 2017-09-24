@@ -90,14 +90,9 @@
           {% for post in site.posts %}
             <section>
               <ul>
-                {% for post in tag[1] %}
-                <li><a href="/blog{{ post.url }}">{{ post.title }}</a></li>
-                {% endfor %}
-              </ul>
-              <ul>
                 <a href="/blog{{ post.url }}">
                   <li class="Entry">
-                    <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
+                    <h3 id="tag_{{ tag[0] }}">{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
                   </li>
                   {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
                 </a>
