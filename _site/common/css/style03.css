@@ -10,14 +10,33 @@
 #Tags {
   display: flex;
   flex-flow: row wrap;
-  flex: auto;
+  flex: initial;
   justify-content: space-between;
   align-items: center;
 }
 
+#Tags section {
+  padding: 3vmin;
+  border-radius: 5px;
+}
+
+#Tags secton:first-child {
+  background-color: #9DBED5;
+}
+
+#Tags section:nth-child(2){
+  background-color: #AAD3D3;
+}
+
+#Tags section:nth-child(3){
+  background-color: #EED3BF;
+}
+
 #Tags h3 {
-  font-size:14px;
-  line-height: 1.429;
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
+  letter-spacing: 0.3vw;
+  line-height: 1.5;
 }
 
 /* ================================== */
@@ -27,34 +46,38 @@
 #Post ul {
   display: flex;
   flex-flow: column wrap;
-  flex: auto;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: space-between;
+  flex: 0 1 calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .Posts ul a {
   display: block;
-  padding: 50px;
-  align-self: stretch;
-  border: solid 1px blue;
-  border-radius: 5px;
-  margin: 20px;
+  padding: 5vmin;
+  /* align-self: stretch; */
+  border: solid 1px #FCFCFC;
+  border-radius: 2px;
+  margin: 2vmin;
   background-color: #FCFCFC;
-  font-size: 20px;
-  line-height: 1.3;
+  /* font-size: 20px; */
+  /* line-height: 1.3; */
   text-align: center;
 }
 
 .Posts ul a:hover {
   color: #FCFCFC;
-  box-shadow: 0 6px 0 0 #C9C9C9;
-  transition: box-shadow 0.3s ease-out;
+  background-color: #C9C9C9;
+  transition: background-color 0.3s ease-out;
 }
 
 .Entry > h3 {
-  font-size: 28px;
-  line-height: 1.214;
+  /* font-size: 28px; */
+  /* line-height: 1.214; */
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 60);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 60);
+  letter-spacing: 0.1vw;
+  line-height: 1.75;
   text-align: center;
 }
 
@@ -63,15 +86,15 @@
 /* ================================== */
 
 .topBtn {
-	position: fixed;
-	bottom: 2%;
-	right: 3%;
-	width: 8%;
-	height: auto;
+  position: fixed;
+  bottom: 2vmin;
+  right: 3vw;
+  width: 10vw;
+  height: auto;
 }
 
 #Arrow {
-	display: none;
+  display: none;
 }
 
 /* ==================== Responsive Web Design ====================> */
@@ -85,9 +108,7 @@
 /* ================================== */
 
 .topBtn {
-  bottom: 30px;
-  right: 10px;
-  width: 50px;
+  width: 10vmax;
 }
 
 }
