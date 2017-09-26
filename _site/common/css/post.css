@@ -114,12 +114,44 @@ text-align: end;
   padding: 10%;
 }
 
+.prev polyline {
+  fill: none;
+  stroke: rgba(252, 252, 252, 0.60);
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.prev circle {
+  fill: rgba(201, 201, 201, 0.60);
+}
+
 .Home {
   padding: 10%;
 }
 
+.Home rect {
+  fill: rgba(201, 201, 201, 0.60);
+  stroke: rgba(201, 201, 201, 0.60);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .next {
   padding: 10%;
+}
+
+.next polyline {
+  fill: none;
+  stroke: rgba(252, 252, 252, 0.60);
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.next cicle {
+  fill: rgba(201, 201, 201, 0.60);
 }
 
 /* ================================== */
