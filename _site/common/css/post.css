@@ -116,20 +116,21 @@ svg {
 }
 
 .prev {
-  padding: 10%;
+  padding: 5vmin 10vmin;
+  background-color: #C9C9C9;
 }
 
-.prev polyline {
-  fill: none;
-  stroke: rgba(252, 252, 252, 0.60);
-  stroke-width: 10;
+.prev path {
+  fill: #9B9B9B;
+  stroke: #9B9B9B;
+  stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.prev rect {
-  fill: rgba(201, 201, 201, 0.60);
-}
+/* .prev rect {                       */
+/*   fill: rgba(201, 201, 201, 0.60); */
+/* }                                  */
 
 .Home {
   padding: 10%;
@@ -144,20 +145,21 @@ svg {
 }
 
 .next {
-  padding: 10%;
+  padding: 5vmin 10vmin;
+  background-color: #C9C9C9;
 }
 
 .next polyline {
-  fill: none;
-  stroke: rgba(252, 252, 252, 0.60);
-  stroke-width: 10;
+  fill: #9B9B9B;
+  stroke: #9B9B9B;
+  stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.next rect {
-  fill: rgba(201, 201, 201, 0.60);
-}
+/* .next rect {                       */
+/*   fill: rgba(201, 201, 201, 0.60); */
+/* }                                  */
 
 /* ================================== */
 /*  Page footer                       */
