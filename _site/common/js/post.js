@@ -61,43 +61,45 @@ $(function(){
 // ========================================
 
 $(function(){
-
   var $body = $('body');
-  var $target = $body.find('img').not('.InModal'); // <= .InModal が付いていない<img>要素を取得
-/*
-  var $wrapper = $('<div></div>');
-  $wrapper.addClass('WrapperImg');
-  $target.wrap($wrapper); // <= まず全ての<img>要素を<div>で囲む
-  var $BlueWall = $('<div></div>');
-  $BlueWall.addClass('BlueWall');
-  $('.WrapperImg').prepend($BlueWall); // <= ＄BlueWallを<img>要素を囲んだ親<div>要素の先頭に挿入
-*/
-  $target
-/*
-  .each(function(){
-    var $Previous = $(this).prev('.BlueWall'); // <= ＄Previous は各々の<img>要素の前の<div>要素です
-    $Previous
-    .css({
-      height:'size_h',
-      width:'size_w'
-    });
-  })
+//   var $target = $body.find('img').not('.InModal');
+//   var $wrapper = $('<div></div>');
+//   $wrapper.addClass('WrapperImg');
+//
+//   $target.wrap($wrapper)
+//   .on('contextmenu', function(e){
+//      e.preventDefault();
+//    })
+//   .each(function(){
+//     var Img_data = $(this).data('img');
+//     $(this).attr('src', Img_data);
+//   });
+//
+  if(navigator.platform.indexOf("Mac") != -1){
+      console.log('Hello, Mac!');
+  } else {
+      console.log('Hello, Windows or Linux!');
+        }
 
-  .on('contextmenu', function(){ // <= <img>要素上のみ右クリックメニューが出ない
-    return false;
-  });
-*/
   $body
-  .keydown(function(event){ // <= ctrl + C || ctrl + A key を無効化
-    if((event.ctrlKey === true && event.which === 67) ||
-      (event.ctrlKey === true && event.which === 65)){
-      return false;
+  .keydown(function(e){
+    if(navigator.platform.indexOf("Mac") != -1){
+      if((e.metaKey === true && e.which === 65) ||
+         (e.metaKey === true && e.which === 67) ||
+         (e.metaKey === true && e.which === 88)){
+        e.preventDefault();
+      }
+    } else {
+        if((e.ctrlKey === true && e.which === 65) ||
+           (e.ctrlKey === true && e.which === 67) ||
+           (e.ctrlKey === true && e.which === 88)){
+          e.preventDefault();
+      }
     }
   })
-  .bind('copy', function(){ // <= コピーを無効化
-    return false;
+  .on('copy cut', function(e){
+    e.preventDefault();
   });
-
 });
 
 // ==================================
