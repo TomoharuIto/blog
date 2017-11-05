@@ -62,19 +62,29 @@ $(function(){
 
 $(function(){
   var $body = $('body');
-//   var $target = $body.find('img').not('.InModal');
-//   var $wrapper = $('<div></div>');
-//   $wrapper.addClass('WrapperImg');
-//
-//   $target.wrap($wrapper)
-//   .on('contextmenu', function(e){
-//      e.preventDefault();
-//    })
-//   .each(function(){
-//     var Img_data = $(this).data('img');
-//     $(this).attr('src', Img_data);
-//   });
-//
+  var $target = $body.find('img');
+  var $wrapper = $('<div></div>');
+  $wrapper.addClass('WrapperImg');
+
+  $target.wrap($wrapper)
+  .on('contextmenu', function(e){
+     e.preventDefault();
+   });
+
+  function Replace() {
+    $target
+    .each(function(){
+      var Img_data = $(this).data('img');
+      $(this).attr('src', Img_data);
+    });
+  }
+
+  $(window).on('load', function(){
+    Replace();
+  });
+
+  Replace();
+
   if(navigator.platform.indexOf("Mac") != -1){
       console.log('Hello, Mac!');
   } else {
@@ -82,8 +92,7 @@ $(function(){
         }
 
   $body
-  .on('keypress', function(e){
-    consolo.log('Hello,World!');
+  .on('keydown', function(e){
     if(navigator.platform.indexOf("Mac") != -1){
       if((e.metaKey === true && e.which === 65) ||
          (e.metaKey === true && e.which === 67) ||
