@@ -82,7 +82,8 @@ $(function(){
         }
 
   $body
-  .keydown(function(e){
+  .on('keypress', function(e){
+    consolo.log('Hello,World!');
     if(navigator.platform.indexOf("Mac") != -1){
       if((e.metaKey === true && e.which === 65) ||
          (e.metaKey === true && e.which === 67) ||
