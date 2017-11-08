@@ -43,10 +43,9 @@
 /* ================================== */
 
 .Posts {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: initial;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 .Posts ul a {
