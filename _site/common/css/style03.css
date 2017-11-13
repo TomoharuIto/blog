@@ -64,7 +64,7 @@
   transition: background-color 0.3s ease-out;
 }
 
-.Entry > h3 {
+.Posts h3 {
   font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
   font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
   letter-spacing: 0.3vw;
