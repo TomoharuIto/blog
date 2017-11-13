@@ -7,7 +7,7 @@
 // ========================================
 
 $(function(){
-  var $Boxes = $('.Entry');
+  var $Boxes = $('.Entry a');
 
   $(window).on('load', function(){
      var Basis_h = 0;
