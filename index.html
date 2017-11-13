@@ -76,7 +76,7 @@
         </nav>
         <nav class="Posts">
           {% for post in site.posts %}
-            <section>
+            <section class="Entry">
                 <a href="/blog{{ post.url }}">
                     <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
                     {{ post.excerpt | remove: '<p>' | remove: '</p>' }}

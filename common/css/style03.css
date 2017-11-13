@@ -48,7 +48,7 @@
   grid-template-rows: auto;
 }
 
-.Posts section a {
+.Entry a {
   display: block;
   padding: 2vh 3vw;
   border: solid 1px #FCFCFC;
@@ -58,13 +58,13 @@
   text-align: center;
 }
 
-.Posts section a:hover {
+.Entry a:hover {
   color: #FCFCFC;
   background-color: #C9C9C9;
   transition: background-color 0.3s ease-out;
 }
 
-.Posts h3 {
+.Entry h3 {
   font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
   font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
   letter-spacing: 0.3vw;

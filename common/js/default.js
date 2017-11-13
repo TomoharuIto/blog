@@ -7,7 +7,20 @@
 // ========================================
 
 $(function(){
-  
+  var $Boxes = $('.Entry');
+
+  $(window).on('load', function(){
+     var Basis_h = 0;
+
+    $Boxes.each(function(){
+      var $this = $(this);
+      var Self_h =$this.outerHeight();
+
+      if(Self_h > Basis_h){
+        Basis_h = Self_h;
+      }
+    });
+  });
 });
 
 // ========================================
