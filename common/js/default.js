@@ -20,6 +20,9 @@ $(function(){
         Basis_h = Self_h;
       }
     });
+
+    $Boxes.css({height:Basis_h});
+
   });
 });
 
