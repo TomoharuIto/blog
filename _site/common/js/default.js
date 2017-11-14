@@ -9,9 +9,8 @@
 $(function(){
   var $Boxes = $('.Entry');
 
-  $(window).on('load', function(){
+//   $(window).on('load', function(){
     var Basis_h = 0;
-    console.log($Basis_h);
 
     $Boxes.each(function(){
       var $this = $(this);
@@ -19,7 +18,7 @@ $(function(){
       if(Self_h > Basis_h){
         Basis_h = Self_h;
       }
-    });
+//     });
 
       $Boxes.css({'height':(Basis_h)});
 
