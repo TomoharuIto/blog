@@ -10,7 +10,7 @@ $(function(){
   var $Boxes = $('.Entry');
   console.log($Boxes);
 
-  $(window).on('load', function(){
+  $(window).load(function(){
     var Basis_h = 0;
 
     $Boxes.each(function(){
