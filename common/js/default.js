@@ -17,7 +17,7 @@ $(function(){
 
     $Boxes.each(function(){
       var $this = $(this);
-      var Self_h =$this.outerHeight(true);
+      var Self_h = $this.outerHeight(true);
       console.log('Self_h');
       if(Self_h > Basis_h){
         Basis_h = Self_h;
