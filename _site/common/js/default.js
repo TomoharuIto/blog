@@ -18,14 +18,14 @@ $(function(){
     $Boxes.each(function(){
       var $this = $(this);
       var Self_h =$this.outerHeight(true);
-
+      console.log(Self_h);
       if(Self_h > Basis_h){
         Basis_h = Self_h;
       }
     });
 
 //     if(Box_siz === 'border-box'){
-      $Boxes.css({height:Basis_h});
+      $Boxes.css({'height':(Basis_h)});
 //     } else {
 //       $Boxes.css({height:(Basis_h-(Pad_top + Pad_btm))});
 //     }

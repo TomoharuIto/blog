@@ -47,6 +47,7 @@
   grid-gap: 10%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
+  margin-top: 5vmin;
 }
 
 .Entry a {
@@ -54,7 +55,6 @@
   padding: 2vh 3vw;
   border: solid 1px #FCFCFC;
   border-radius: 5px;
-  /* margin: 1vh 5vw; */
   background-color: #FCFCFC;
   text-align: center;
 }
