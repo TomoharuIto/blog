@@ -7,12 +7,10 @@
 // ========================================
 
 $(function(){
-  var $Boxes = $('.Entry');
-//   var Pad_top = parseInt($Boxes.css('padding-top'));
-//   var Pad_btm = parseInt($Boxes.css('padding-bottom'));
-//   var Box_siz = $Boxes.css('box-sizing');
 
   $(window).on('load', function(){
+
+    var $Boxes = $('.Entry');
     var Basis_h = 0;
 
     $Boxes.each(function(){
@@ -24,11 +22,8 @@ $(function(){
       }
     });
 
-//     if(Box_siz === 'border-box'){
       $Boxes.css({'height':(Basis_h)});
-//     } else {
-//       $Boxes.css({height:(Basis_h-(Pad_top + Pad_btm))});
-//     }
+
   });
 });
 
