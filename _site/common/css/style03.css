@@ -49,11 +49,11 @@
 }
 
 .Entry a {
-  display: block;
+  /* display: block; */
   padding: 2vh 3vw;
   border: solid 1px #FCFCFC;
   border-radius: 5px;
-  margin: 1vh 5vw;
+  /* margin: 1vh 5vw; */
   background-color: #FCFCFC;
   text-align: center;
 }
