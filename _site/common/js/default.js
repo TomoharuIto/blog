@@ -8,13 +8,13 @@
 
 $(function(){
   var $Boxes = $('.Entry');
-  console.log($Boxes);
 
-  $(window).load(function(){
+  $(window).on('load', function(){
     var Basis_h = 0;
 
     $Boxes.each(function(){
       var $this = $(this);
+      console.log($this);
       var Self_h = $this.outerHeight(true);
       if(Self_h > Basis_h){
         Basis_h = Self_h;
