@@ -11,10 +11,10 @@ $(function(){
 
   $(window).on('load', function(){
     var Basis_h = 0;
+    console.log($Basis_h);
 
     $Boxes.each(function(){
       var $this = $(this);
-      console.log($this);
       var Self_h = $this.outerHeight(true);
       if(Self_h > Basis_h){
         Basis_h = Self_h;
