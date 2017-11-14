@@ -44,12 +44,13 @@
 
 .Posts {
   display: grid;
+  grid-gap: 10%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
 
 .Entry a {
-  /* display: block; */
+  display: inline-block;
   padding: 2vh 3vw;
   border: solid 1px #FCFCFC;
   border-radius: 5px;
