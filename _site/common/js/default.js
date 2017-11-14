@@ -7,16 +7,15 @@
 // ========================================
 
 $(function(){
+  var $Boxes = $('.Entry');
+  console.log($Boxes);
 
   $(window).on('load', function(){
-
-    var $Boxes = $('.Entry');
     var Basis_h = 0;
 
     $Boxes.each(function(){
       var $this = $(this);
       var Self_h = $this.outerHeight(true);
-      console.log('Self_h');
       if(Self_h > Basis_h){
         Basis_h = Self_h;
       }
