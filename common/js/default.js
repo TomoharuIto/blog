@@ -7,22 +7,20 @@
 // ========================================
 
 $(function(){
-  var $Boxes = $('.Entry');
+  var $Boxes = $('.Entry a');
+  var Basis_h = 0;
 
-//   $(window).on('load', function(){
-    var Basis_h = 0;
+  $Boxes.each(function(){
+    var $this = $(this);
+    var Self_h = $this.outerHeight();
 
-    $Boxes.each(function(){
-      var $this = $(this);
-      var Self_h = $this.outerHeight();
-      if(Self_h > Basis_h){
-        Basis_h = Self_h;
-      }
-//     });
+    if(Self_h > Basis_h){
+      Basis_h = Self_h;
+    }
 
-      $Boxes.css({'height':(Basis_h)});
-
+    $Boxes.css({'height':(Basis_h)});
   });
+
 });
 
 // ========================================
