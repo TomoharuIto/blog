@@ -44,10 +44,10 @@
 
 .Posts {
   display: grid;
-  grid-gap: 10%;
+  grid-gap: 5vmin;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  margin-top: 5vmin;
+  padding: 5vmin 0;
 }
 
 .Entry {
@@ -94,6 +94,14 @@
 /* ==================== When the screen size is 736px or less ====================> */
 
 @media screen and (max-width:736px) {
+
+/* ================================== */
+/* Articles list                      */
+/* ================================== */
+
+.Posts {
+  grid-template-columns: 1fr;
+}
 
 /* ================================== */
 /* Back to top Button                 */
