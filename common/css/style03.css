@@ -50,7 +50,7 @@
   margin-top: 5vmin;
 }
 
-.Entry a {
+.Entry {
   display: inline-block;
   padding: 2vh 3vw;
   border: solid 1px #FCFCFC;
@@ -59,7 +59,7 @@
   text-align: center;
 }
 
-.Entry a:hover {
+.Entry:hover {
   color: #FCFCFC;
   background-color: #C9C9C9;
   transition: background-color 0.3s ease-out;

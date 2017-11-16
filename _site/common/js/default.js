@@ -6,8 +6,9 @@
 // Adjust boxes to same height
 // ========================================
 
-$(function(){
-  var $Boxes = $('.Entry a');
+$(window).on('load', function(){
+
+  var $Boxes = $('.Entry');
   var Basis_h = 0;
 
   $Boxes.each(function(){
@@ -17,7 +18,6 @@ $(function(){
     if(Self_h > Basis_h){
       Basis_h = Self_h;
     }
-
     $Boxes.css({'height':(Basis_h)});
   });
 
