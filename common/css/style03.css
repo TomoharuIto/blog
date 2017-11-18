@@ -59,7 +59,7 @@
   text-align: center;
 }
 
-.Entry a:hover {
+.Entry:hover {
   color: #FCFCFC;
   background-color: #C9C9C9;
   transition: background-color 0.3s ease-out;

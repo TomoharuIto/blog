@@ -76,12 +76,12 @@
         </nav>
         <nav class="Posts">
           {% for post in site.posts %}
-            <section class="Entry">
-              <a href="/blog{{ post.url }}">
+            <a class="Entry" href="/blog{{ post.url }}">
+              <section>
                 <h3>{{ post.date | date: "%Y.%m.%d" }}<br>{{ post.title }}</h3>
                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-              </a>
-            </section><!-- /.Entry -->
+              </section><!-- /.Entry -->
+            </a>
           {% endfor %}
         </nav><!-- /.Posts -->
       </article>
