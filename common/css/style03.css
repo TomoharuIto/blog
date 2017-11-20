@@ -43,27 +43,28 @@
 /* ================================== */
 
 .Posts {
-  display: grid;
-  grid-gap: 5vmin;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   padding: 5vmin 0;
 }
 
 .Entry {
   display: block;
+  flex: 0 1 30%;
   padding: 2vh 3vw;
+  margin: 2vh 0;
   border: solid 1px #FCFCFC;
   border-radius: 5px;
   background-color: #FCFCFC;
   text-align: center;
 }
 
-.Entry:hover {
-  color: #FCFCFC;
-  background-color: #C9C9C9;
-  transition: background-color 0.3s ease-out;
-}
+/* .Entry:hover {                                */
+/*   color: #FCFCFC;                             */
+/*   background-color: #C9C9C9;                  */
+/*   transition: background-color 0.3s ease-out; */
+/* }                                             */
 
 .Entry h3 {
   font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
