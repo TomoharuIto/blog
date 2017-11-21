@@ -6,7 +6,7 @@
 // Adjust boxes to same height
 // ========================================
 
-$(window).on('load', function(){
+$(window).on('load resize', function(){
 
   var $Boxes = $('.Entry');
   var Basis_h = 0;
