@@ -6,19 +6,21 @@
 // Adjust boxes to same height
 // ========================================
 
-$(window).on('load resize', function(){
+$(function(){
 
   var $Boxes = $('.Entry');
   var Basis_h = 0;
 
-  $Boxes.each(function(){
-    var $this = $(this);
-    var Self_h = $this.outerHeight();
+  $(window).on('load resize', function(){
+    $Boxes.each(function(){
+      var $this = $(this);
+      var Self_h = $this.outerHeight();
 
-    if(Self_h > Basis_h){
-      Basis_h = Self_h;
-    }
-    $Boxes.css({'height':(Basis_h)});
+      if(Self_h > Basis_h){
+        Basis_h = Self_h;
+      }
+      $Boxes.css({'height':(Basis_h)});
+    });
   });
 
 });
