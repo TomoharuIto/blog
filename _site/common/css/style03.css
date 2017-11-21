@@ -52,7 +52,7 @@
 .Entry {
   display: block;
   flex: 0 1 30%;
-  padding: 8vmin 2vmin 0;
+  padding: 4vmin 2vmin 2vmin;
   margin: 2vmin 0;
   border: solid 1px #FCFCFC;
   border-radius: 5px;
