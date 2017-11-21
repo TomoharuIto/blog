@@ -52,7 +52,7 @@
 .Entry {
   display: block;
   flex: 0 1 30%;
-  padding: 2vh 3vw;
+  padding: 8vmin 2vmin 0;
   margin: 2vmin 0;
   border: solid 1px #FCFCFC;
   border-radius: 5px;
@@ -106,6 +106,7 @@
 
 .Entry {
   flex: 0 1 2vmin;
+  padding: 2vmin;
 }
 
 /* ================================== */
