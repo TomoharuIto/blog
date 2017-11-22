@@ -28,6 +28,19 @@ $(function(){
 // Boxes Jumps out when the mouse over
 // ========================================
 
+$(function(){
+
+  var $this = $(this);
+
+  $('.Entry').on('mouseenter', function(){
+    $this.addClass('Jumps_out');
+  })
+  .on('mouseleave', function(){
+    $this.removeClass('Jumps_out');
+  });
+
+});
+
 // ========================================
 // Back to top of page
 // ========================================

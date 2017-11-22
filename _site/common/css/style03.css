@@ -67,11 +67,19 @@
 /* }                                             */
 
 .Entry h3 {
-  font-size: calc(0.875em + 0.25 * (100 - 80em) / 30);
-  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 30);
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 40);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 40);
   letter-spacing: 0.3vw;
   line-height: 1.75;
   text-align: center;
+}
+
+/* ================================== */
+/* Boxes Jumps out when the mouse over*/
+/* ================================== */
+
+.Jumps_out {
+  transform: scale(1.3);
 }
 
 /* ================================== */
