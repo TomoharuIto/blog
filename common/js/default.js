@@ -32,10 +32,10 @@ $(function(){
 
   var $this = $(this);
 
-  $('.Entry').on('mouseenter', function(){
+  $('.Entry').on('mouseover', function(){
     $this.addClass('Jumps_out');
   })
-  .on('mouseleave', function(){
+  .on('mouseout', function(){
     $this.removeClass('Jumps_out');
   });
 
