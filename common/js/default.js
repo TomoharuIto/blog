@@ -30,9 +30,10 @@ $(function(){
 
 $(function(){
 
-  var $this = $(this);
-
   $('.Entry').on('mouseover', function(){
+
+    var $this = $(this);
+
     $this.addClass('Jumps_out');
   })
   .on('mouseout', function(){
