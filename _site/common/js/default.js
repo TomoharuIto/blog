@@ -30,13 +30,13 @@ $(function(){
 
 $(function(){
 
-  $('.Entry').on('mouseover', function(){
+  $('.Entry').on('mouseenter', function(){
 
     var $this = $(this);
 
     $this.addClass('Jumps_out');
   })
-  .on('mouseout', function(){
+  .on('mouseleave', function(){
     $this.removeClass('Jumps_out');
   });
 
