@@ -30,9 +30,9 @@ $(function(){
 
 $(function(){
 
-  $('.Entry').on('mouseenter', function(){
+  var $Boxes = $('.Entry');
 
-    var $this = $(this);
+  $Boxes.on('mouseenter', function(){
 
     $this.addClass('Jumps_out');
   })
