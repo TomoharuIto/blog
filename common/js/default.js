@@ -37,6 +37,15 @@ $(function(){
   })
   .on('mouseleave', function(){
     $(this).removeClass('Jumps_out');
+  })
+  .each(function(){
+    try{
+      e = document.createEvent('TouchEvent');
+      $(this)
+      .off('mouseenter')
+      .off('mouseleave');
+    } catch(err) {
+    }
   });
 
 });
