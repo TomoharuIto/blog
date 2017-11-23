@@ -68,8 +68,8 @@
 }
 
 .Entry h4 {
-  font-size: calc(0.875em + 0.25 * (100 - 80em) / 60);
-  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 60);
+  font-size: calc(0.875em + 0.25 * (100 - 80em) / 70);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 800%) / 70);
 }
 
 /* ================================== */
