@@ -33,11 +33,10 @@ $(function(){
   var $Boxes = $('.Entry');
 
   $Boxes.on('mouseenter', function(){
-
-    $this.addClass('Jumps_out');
+    $(this).addClass('Jumps_out');
   })
   .on('mouseleave', function(){
-    $this.removeClass('Jumps_out');
+    $(this).removeClass('Jumps_out');
   });
 
 });
